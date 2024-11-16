@@ -5,6 +5,7 @@ import 'package:benhvienbienhoa/block/about.dart';
 import 'package:benhvienbienhoa/block/banner.dart';
 import 'package:benhvienbienhoa/block/camnhan.dart';
 import 'package:benhvienbienhoa/block/chuyenkhoa.dart';
+import 'package:benhvienbienhoa/block/footer.dart';
 import 'package:benhvienbienhoa/block/header.dart';
 import 'package:benhvienbienhoa/block/post.dart';
 import 'package:benhvienbienhoa/block/search.dart';
@@ -56,6 +57,8 @@ class _HomePageState extends State<HomePage> {
               CamnhanWidget(),
 
               ChuyenKhoaWidget(),
+
+              FooterWidget(),
             ],
           ),
         ),
