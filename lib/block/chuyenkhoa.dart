@@ -13,12 +13,13 @@ class ChuyenKhoaWidget extends StatelessWidget {
         horizontal: 15,
       ),
       child: GridView.builder(
-        // shrinkWrap: true,
+        shrinkWrap: true,
         physics: NeverScrollableScrollPhysics(),
         gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
           crossAxisSpacing: 10,
           mainAxisSpacing: 10,
+          mainAxisExtent: 220,
         ),
         itemCount: categories.length,
         itemBuilder: (context, index) {
@@ -26,15 +27,14 @@ class ChuyenKhoaWidget extends StatelessWidget {
             padding: EdgeInsets.symmetric(horizontal: 10, vertical: 10),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
-              color: color2,
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 // image
                 Container(
-                  width: 70,
-                  height: 70,
+                  width: 60,
+                  height: 60,
                   margin: EdgeInsets.only(bottom: 5),
                   decoration: BoxDecoration(
                     color: color2,
